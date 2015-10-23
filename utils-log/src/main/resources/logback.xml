@@ -7,40 +7,6 @@
 		</encoder>
 	</appender>
 
-	<!-- APPENDERS -->
-	<appender name="CAT_1_MYLOG" class="ch.qos.logback.core.FileAppender">
-		<file>logs/cat-1-mylog.log</file>
-		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
-			</pattern>
-		</encoder>
-	</appender>
-	<appender name="CAT_2_MYLOG" class="ch.qos.logback.core.FileAppender">
-		<file>logs/cat-2-mylog.log</file>
-		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
-			</pattern>
-		</encoder>
-	</appender>
-	<appender name="CAT_3_MYLOG" class="ch.qos.logback.core.FileAppender">
-		<file>logs/cat-3-mylog.log</file>
-		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
-			</pattern>
-		</encoder>
-	</appender>
-
-	<!-- LOGGERS -->
-	<logger name="CAT_1_MYLOG" level="TRACE">
-		<appender-ref ref="CAT_1_MYLOG" />
-	</logger>
-	<logger name="CAT_2_MYLOG" level="TRACE">
-		<appender-ref ref="CAT_2_MYLOG" />
-	</logger>
-	<logger name="CAT_3_MYLOG" level="TRACE">
-		<appender-ref ref="CAT_3_MYLOG" />
-	</logger>
-
 	<root level="ERROR">
 		<!-- <appender-ref ref="STDOUT" /> -->
 	</root>
